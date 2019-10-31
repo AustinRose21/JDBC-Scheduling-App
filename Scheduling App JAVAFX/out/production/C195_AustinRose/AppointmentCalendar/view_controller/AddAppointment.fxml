@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="AppointmentCalendar.view_controller.AddAppointmentController">
+   <children>
+            <TextField fx:id="customerIdTextField" layoutX="151.0" layoutY="125.0" />
+            <TextField fx:id="titleTextField" layoutX="151.0" layoutY="162.0" />
+            <TextField fx:id="descriptionTextField" layoutX="151.0" layoutY="201.0" prefHeight="25.0" prefWidth="149.0" />
+            <Label layoutX="26.0" layoutY="162.0" prefHeight="25.0" prefWidth="108.0" text="Title:" />
+            <Label layoutX="26.0" layoutY="125.0" prefHeight="25.0" prefWidth="108.0" text="Customer ID:" />
+            <Label layoutX="26.0" layoutY="201.0" prefHeight="25.0" prefWidth="108.0" text="Description:" />
+            <Label layoutX="134.0" layoutY="14.0" prefHeight="70.0" prefWidth="284.0" text="ADD APPOINTMENT">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Button fx:id="saveButton" layoutX="356.0" layoutY="327.0" mnemonicParsing="false" onAction="#handleSaveAddAppointment" prefHeight="53.0" prefWidth="108.0" text="SAVE" />
+            <Button fx:id="cancelButton" layoutX="471.0" layoutY="327.0" mnemonicParsing="false" onAction="#handleCancelAddAppointment" prefHeight="53.0" prefWidth="108.0" text="CANCEL" />
+            <Label layoutX="26.0" layoutY="249.0" prefHeight="25.0" prefWidth="108.0" text="Location:" />
+            <TextField fx:id="locationTextField" layoutX="151.0" layoutY="249.0" />
+      <Label layoutX="26.0" layoutY="291.0" prefHeight="17.0" prefWidth="62.0" text="Contact:" />
+      <TextField fx:id="contactTextField" layoutX="151.0" layoutY="287.0" />
+      <Label layoutX="317.0" layoutY="88.0" prefHeight="17.0" prefWidth="62.0" text="URL:" />
+      <Label layoutX="317.0" layoutY="129.0" prefHeight="17.0" prefWidth="29.0" text="Start:" />
+      <TextField fx:id="startHourTextField" layoutX="395.0" layoutY="138.0" prefHeight="25.0" prefWidth="47.0" />
+      <Label layoutX="366.0" layoutY="142.0" prefHeight="17.0" prefWidth="36.0" text="Hour:" />
+      <TextField fx:id="urlTextField" layoutX="365.0" layoutY="84.0" />
+      <Label layoutX="442.0" layoutY="142.0" prefHeight="17.0" prefWidth="44.0" text="Minute:" />
+      <TextField fx:id="startMinuteTextField" layoutX="486.0" layoutY="138.0" prefHeight="25.0" prefWidth="47.0" />
+      <Label layoutX="317.0" layoutY="192.0" prefHeight="17.0" prefWidth="29.0" text="End:" />
+      <Label layoutX="361.0" layoutY="218.0" prefHeight="17.0" prefWidth="36.0" text="Hour:" />
+      <TextField fx:id="endHourTextField" layoutX="395.0" layoutY="214.0" prefHeight="25.0" prefWidth="47.0" />
+      <Label layoutX="442.0" layoutY="218.0" prefHeight="17.0" prefWidth="44.0" text="Minute:" />
+      <TextField fx:id="endMinuteTextField" layoutX="486.0" layoutY="214.0" prefHeight="25.0" prefWidth="47.0" />
+      <DatePicker fx:id="startDatePicker" layoutX="366.0" layoutY="117.0" />
+      <DatePicker fx:id="endDatePicker" layoutX="366.0" layoutY="188.0" />
+      <TextField fx:id="userIdTextField" layoutX="368.0" layoutY="249.0" prefHeight="25.0" prefWidth="53.0" />
+      <Label layoutX="318.0" layoutY="253.0" text="UserId:" />
+      <TextField fx:id="apptTypeTextField" layoutX="151.0" layoutY="327.0" />
+      <Label layoutX="29.0" layoutY="331.0" text="Type:" />
+         </children>
+
+
+</AnchorPane>
